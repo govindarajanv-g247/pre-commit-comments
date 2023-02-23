@@ -1,4 +1,9 @@
 repos:
+  - repo: https://github.com/govindsme/JenkinsfileLint
+    rev: v1.0.0
+    hooks:
+      - id: JenkinsfileLint
+        args: ['Jenkinsfile']
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v2.1.1
     hooks:
