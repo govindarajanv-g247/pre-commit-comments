@@ -1,6 +1,11 @@
 repos:
-  - repo: https://github.com/govindsme/JenkinsfileLint
-    rev: v1.0.0
+  - repo: https://github.com/govindarajanv-g247/jenkinslint
+    rev: 6e3f8935255c158724e75bed939357432a20aadd
     hooks:
       - id: JenkinsfileLint
+        args: ['Jenkinsfile']
+  - repo: https://github.com/govindsme/JenkinsfileLint
+    rev: main
+    hooks:
+      - id: JenkinsfileLinter
         args: ['Jenkinsfile']
